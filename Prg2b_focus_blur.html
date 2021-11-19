@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p> Yellow when focused in text box and when moved from the text box background becomes red
+Enter your name: <input type="text" id="myInput" onfocus="focusFunction()" onblur="blurFunction()">
+
+<script>
+// Focus = Changes the background color of input to yellow
+function focusFunction() {
+  document.getElementById("myInput").style.background = "yellow";
+}
+
+// No focus = Changes the background color of input to red
+function blurFunction() {
+  document.getElementById("myInput").style.background = "red";
+}
+</script>
+
+</body>
+</html>

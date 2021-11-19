@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function selectedFood() {
+  choice = document.forms[0].food.value;
+  alert("You prefer food that is " + choice);
+}
+</script>
+</head>
+<body>
+
+<form>
+Choose which food do you prefer:
+  <select id="food" onchange="selectedFood()">
+    <option value="Chapathi">Chapathi</option>
+    <option value="Rice Rasam">Rice Rasam</option>
+    <option value="Bisi Bele Bath">Bisi Bele Bath</option>
+  </select>
+</form>
+
+</body>
+</html>
